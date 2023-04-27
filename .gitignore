@@ -1,0 +1,50 @@
+#Temporary folders
+DDC/
+Intermediate/
+Binaries/
+PaintGame/DerivedDataCache/*
+Saved/
+PaintGame/Plugins/BlueprintAssist/NodeSizeCache/
+PaintGame/Plugins/Developer/
+
+#Compiled object files
+*.slo
+*.lo
+*.o
+*.obj
+
+#Precompiled Headers
+*.gch
+*.pch
+*.ipch
+
+#Compiled Dynamic Libraries
+*.so
+*.dylib
+*.dll
+
+#Fortran Module Files
+*.mod
+
+#Compiled Static Libraries
+*.lai
+*.a
+*.la
+*.lib
+
+#Executables
+*.exe
+*.out
+*.app
+*.ipa
+*.db
+*.bat
+
+#VS files
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.vc.db
+*.opendb
+.vs/
