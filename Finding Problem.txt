@@ -1,0 +1,8 @@
+Print Array function
+
+The print array function should have null check in place to check if Actor object is nullptr. If object is null, it will cause the project to crash
+
+Begin play function
+
+The function is spawning 100000 actor in one tick so it might cause a massive lagspike. In order to fix this, the function can be changed to batch spawning in an interval. We can then check the array size or cache the number of actor spawned on each interval. When the number of actor spawned reach 100000, then it will stop the loop and execute print array.
+
