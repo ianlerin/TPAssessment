@@ -289,7 +289,7 @@ void AMyProject3Character::ExecutePunch()
 	// slight forward from character
 	FVector Start = GetActorLocation() + GetActorForwardVector() * MeleeRange;
 	FVector End = Start;
-	bool bFound=UKismetSystemLibrary::SphereTraceSingle(this, Start, End, MeleeRadius, ETraceTypeQuery::TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForDuration, Res, false);
+	bool bFound=UKismetSystemLibrary::SphereTraceSingle(this, Start, End, MeleeRadius, ETraceTypeQuery::TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::None, Res, false);
 	if (bFound)
 	{
 		if (Res.GetActor())
