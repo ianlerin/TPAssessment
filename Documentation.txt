@@ -1,14 +1,26 @@
 Jetpack:
 The jetpack in the project is a simple implementation. It launches the character in a constant velocity upward at a fixed time interval.I also increased the character air control to allow for greater movement or control while on air.
 
+time: 20 mins
+
 Double jump:
 Unreal allows for double jump by default by increasing the jump count in the character blueprint. However, the second jump has significantly less power in it even if the jump velocity is the same. Therefore, i created a custom jump function that would have the second jump's strength increased to compensate.
 
+time: 30mins
+
 Interaction:
-Interaction is more complicated because it is using the same key for both interaction with npc or interaction with object. In order to modularize the interaction function i used an interaction interface to allow me to specify different interaction that different objects can do. For example, the character interface would toggle the speaking bubble widget while the cube interface would attach and detach itself from the character. I also created another interface component which can store multiple dynamic variables within them which are used when performing pickup operations. 
+Interaction is more complicated because it is using the same key for both interaction with npc or interaction with object. In order to modularize the interaction function i used an interaction interface to allow me to specify different interaction that different objects can do. For example, the character interface would toggle the speaking bubble widget while the cube interface would attach and detach itself from the character. I also created another interface component which can store multiple dynamic variables within them which are used when performing pickup operations. Currently the cube is moved by projectile movement which makes the movement looks less realistic. Perhaps a better/ alternative option would be to enable simulate physics and simulate movements that way.
+
+time: 2 hours
 
 Damaging:
-I created a health component which we can attach to any class to make it a class that can be damaged.I noticed that the effect of the damage happening is not apparent, therefore i added a simple float parameter to the material used to allow it to reflect it taking damage.
+I created a health component which we can attach to any class to make it a class that can be damaged.I noticed that the effect of the damage happening is not apparent, therefore i added a simple float parameter to the material used to allow it to reflect that it is taking damage. The punch animation i created in ue5 editor is also crude so there are room for improvement on that part.
+
+time: 40 mins
+
+Implement miscellaneous hud widget for instruction
+
+time: 20 mins 
 
 Overall improvement:
 Alot of this functions can be modularized so that they can be decoupled to add to any character class. One way to do that is by using the GAS(gameplay ability system) and making each of these functions an ability and moving the implmentation of these functions into that ability. However, due to the time limit adviced i decided not to spend time in setting up the GAS system and instead spend more time to develop more of the individual features
