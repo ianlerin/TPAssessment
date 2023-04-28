@@ -222,7 +222,7 @@ void AMyProject3Character::TryInteract()
 		FHitResult Res;
 		FVector TraceStart = GetActorLocation();
 		FVector TraceEnd = GetActorLocation() + FollowCamera->GetForwardVector() * InteractComponent->InteractRange;
-		UKismetSystemLibrary::CapsuleTraceSingle(this, TraceStart, TraceEnd, 20,20,ETraceTypeQuery::TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::ForDuration, Res, false);
+		UKismetSystemLibrary::CapsuleTraceSingle(this, TraceStart, TraceEnd, 20,20,ETraceTypeQuery::TraceTypeQuery1, false, ActorsToIgnore, EDrawDebugTrace::None, Res, false);
 		if (Res.GetActor())
 		{
 			UInteractComponent* InteractComp = Cast<UInteractComponent>(Res.GetActor()->FindComponentByClass<UInteractComponent>());

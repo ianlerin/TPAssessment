@@ -24,3 +24,5 @@ time: 20 mins
 
 Overall improvement:
 Alot of this functions can be modularized so that they can be decoupled to add to any character class. One way to do that is by using the GAS(gameplay ability system) and making each of these functions an ability and moving the implmentation of these functions into that ability. However, due to the time limit adviced i decided not to spend time in setting up the GAS system and instead spend more time to develop more of the individual features
+
+Link to explaination video: https://youtu.be/enlBiVwk-jU
